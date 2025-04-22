@@ -177,13 +177,11 @@ const Contact = () => {
               </div>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col justify-between h-full">
-              <div className="flex-grow">
-                <h3 className="text-xl font-semibold text-steuerblau mb-4">Direkt einen Termin buchen</h3>
-                <p className="text-steuergrau-dark mb-4">
-                  Buchen Sie direkt ein kostenloses 30-minütiges Erstgespräch in meinem Kalender.
-                </p>
-              </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-steuerblau mb-4">Direkt einen Termin buchen</h3>
+              <p className="text-steuergrau-dark mb-4 flex-grow">
+                Buchen Sie direkt ein kostenloses 30-minütiges Erstgespräch in meinem Kalender.
+              </p>
               <a 
                 href="#" 
                 className="btn btn-accent btn-lg w-full flex items-center justify-center gap-2 mt-auto"
