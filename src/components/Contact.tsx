@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { MapPin, Phone, Mail, Calendar } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { Button } from '@/components/ui/button';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -50,7 +51,6 @@ const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
           <div className="bg-white p-6 md:p-8 rounded-lg shadow-md flex flex-col">
             <h3 className="text-xl font-semibold text-steuerblau mb-6">Schreiben Sie mir</h3>
             
@@ -134,7 +134,6 @@ const Contact = () => {
             </form>
           </div>
           
-          {/* Contact Info & Map */}
           <div className="space-y-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-steuerblau mb-4">Kontaktdaten</h3>
@@ -177,21 +176,25 @@ const Contact = () => {
               </div>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-steuerblau mb-4">Direkt einen Termin buchen</h3>
-              <p className="text-steuergrau-dark mb-4 flex-grow">
-                Buchen Sie direkt ein kostenloses 30-minütiges Erstgespräch in meinem Kalender.
-              </p>
-              <a 
-                href="#" 
-                className="btn btn-accent btn-lg w-full flex items-center justify-center gap-2 mt-auto"
-              >
-                <Calendar size={20} />
-                Termin im Kalender buchen
-              </a>
-              <p className="text-sm text-steuergrau mt-3 text-center">
-                (Öffnet Calendly-Terminbuchung)
-              </p>
+            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col justify-between h-full">
+              <div>
+                <h3 className="text-xl font-semibold text-steuerblau mb-4">Direkt einen Termin buchen</h3>
+                <p className="text-steuergrau-dark mb-4">
+                  Buchen Sie direkt ein kostenloses 30-minütiges Erstgespräch in meinem Kalender.
+                </p>
+              </div>
+              <div>
+                <a 
+                  href="#" 
+                  className="btn btn-accent btn-lg w-full flex items-center justify-center gap-2"
+                >
+                  <Calendar size={20} />
+                  Termin im Kalender buchen
+                </a>
+                <p className="text-sm text-steuergrau mt-3 text-center">
+                  (Öffnet Calendly-Terminbuchung)
+                </p>
+              </div>
             </div>
           </div>
         </div>
