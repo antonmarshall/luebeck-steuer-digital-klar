@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,22 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors for tax consultant website
+				steuerblau: {
+					DEFAULT: '#1F4D8A',
+					light: '#3A6FB5',
+					dark: '#123661',
+				},
+				steuergrau: {
+					DEFAULT: '#8A898C',
+					light: '#F5F7FA',
+					dark: '#4A4A4A',
+				},
+				steueraccent: {
+					DEFAULT: '#F97316',
+					light: '#FB9B50',
+					dark: '#C45A10',
 				}
 			},
 			borderRadius: {
@@ -89,6 +106,10 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
+			},
+			fontFamily: {
+				'sans': ['Roboto', 'ui-sans-serif', 'system-ui'],
+				'heading': ['Montserrat', 'ui-sans-serif', 'system-ui'],
 			}
 		}
 	},
