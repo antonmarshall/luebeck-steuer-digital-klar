@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { MapPin, Phone, Mail, Calendar } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
@@ -52,10 +51,10 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-white p-6 md:p-8 rounded-lg shadow-md">
+          <div className="bg-white p-6 md:p-8 rounded-lg shadow-md flex flex-col">
             <h3 className="text-xl font-semibold text-steuerblau mb-6">Schreiben Sie mir</h3>
             
-            <form onSubmit={handleSubmit} className="space-y-5">
+            <form onSubmit={handleSubmit} className="space-y-5 flex-grow flex flex-col">
               <div>
                 <label htmlFor="name" className="block text-steuergrau-dark mb-1">Name</label>
                 <input
@@ -128,7 +127,7 @@ const Contact = () => {
               
               <button 
                 type="submit" 
-                className="btn btn-primary btn-lg w-full"
+                className="btn btn-primary btn-lg w-full mt-auto"
               >
                 Nachricht senden
               </button>
@@ -180,12 +179,12 @@ const Contact = () => {
             
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-steuerblau mb-4">Direkt einen Termin buchen</h3>
-              <p className="text-steuergrau-dark mb-4">
+              <p className="text-steuergrau-dark mb-4 flex-grow">
                 Buchen Sie direkt ein kostenloses 30-minütiges Erstgespräch in meinem Kalender.
               </p>
               <a 
                 href="#" 
-                className="btn btn-accent btn-lg w-full flex items-center justify-center gap-2"
+                className="btn btn-accent btn-lg w-full flex items-center justify-center gap-2 mt-auto"
               >
                 <Calendar size={20} />
                 Termin im Kalender buchen
