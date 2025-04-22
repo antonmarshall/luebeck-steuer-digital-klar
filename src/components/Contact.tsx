@@ -177,7 +177,7 @@ const Contact = () => {
               </div>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col">
               <h3 className="text-xl font-semibold text-steuerblau mb-4">Direkt einen Termin buchen</h3>
               <p className="text-steuergrau-dark mb-4 flex-grow">
                 Buchen Sie direkt ein kostenloses 30-minütiges Erstgespräch in meinem Kalender.
