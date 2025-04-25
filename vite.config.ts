@@ -5,6 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // For Project Site (username.github.io/repo-name)
+  base: '/luebeck-steuer-digital-klar/',
+  
   server: {
     host: "::",
     port: 8080,
