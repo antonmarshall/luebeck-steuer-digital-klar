@@ -1,4 +1,3 @@
-
 import { Calendar } from 'lucide-react';
 
 const Hero = () => {
@@ -34,7 +33,7 @@ const Hero = () => {
             <div className="absolute inset-0 bg-steuerblau rounded-2xl opacity-10 transform rotate-3"></div>
             <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                src="/images/steuer_hero" 
                 alt="Steuerberatung in Lübeck" 
                 className="w-full h-auto object-cover aspect-[4/3]"
               />
